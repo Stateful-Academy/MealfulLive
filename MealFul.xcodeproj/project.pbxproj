@@ -13,6 +13,8 @@
 		3EC29FF62794C95500E3C838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC29FF42794C95500E3C838 /* Main.storyboard */; };
 		3EC29FF82794C95600E3C838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC29FF72794C95600E3C838 /* Assets.xcassets */; };
 		3EC29FFB2794C95600E3C838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC29FF92794C95600E3C838 /* LaunchScreen.storyboard */; };
+		3EC2A0052794D8EB00E3C838 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC2A0042794D8EB00E3C838 /* Food.swift */; };
+		3EC2A0082794D97D00E3C838 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC2A0072794D97D00E3C838 /* FoodController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3EC29FF72794C95600E3C838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EC29FFA2794C95600E3C838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EC29FFC2794C95600E3C838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC2A0042794D8EB00E3C838 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		3EC2A0072794D97D00E3C838 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		3EC29FED2794C95500E3C838 /* MealFul */ = {
 			isa = PBXGroup;
 			children = (
-				3EC29FEE2794C95500E3C838 /* AppDelegate.swift */,
-				3EC29FF02794C95500E3C838 /* SceneDelegate.swift */,
+				3EC2A0062794D97300E3C838 /* Model Controller */,
+				3EC2A0032794D8DE00E3C838 /* Model */,
+				3EC2A0022794C99600E3C838 /* Resources */,
 				3EC29FF22794C95500E3C838 /* ViewController.swift */,
 				3EC29FF42794C95500E3C838 /* Main.storyboard */,
+			);
+			path = MealFul;
+			sourceTree = "<group>";
+		};
+		3EC2A0022794C99600E3C838 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3EC29FEE2794C95500E3C838 /* AppDelegate.swift */,
+				3EC29FF02794C95500E3C838 /* SceneDelegate.swift */,
 				3EC29FF72794C95600E3C838 /* Assets.xcassets */,
 				3EC29FF92794C95600E3C838 /* LaunchScreen.storyboard */,
 				3EC29FFC2794C95600E3C838 /* Info.plist */,
 			);
-			path = MealFul;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3EC2A0032794D8DE00E3C838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EC2A0042794D8EB00E3C838 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EC2A0062794D97300E3C838 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EC2A0072794D97D00E3C838 /* FoodController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC29FF32794C95500E3C838 /* ViewController.swift in Sources */,
+				3EC2A0052794D8EB00E3C838 /* Food.swift in Sources */,
+				3EC2A0082794D97D00E3C838 /* FoodController.swift in Sources */,
 				3EC29FEF2794C95500E3C838 /* AppDelegate.swift in Sources */,
 				3EC29FF12794C95500E3C838 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UCL5625TDG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealFul/Info.plist;
+				INFOPLIST_FILE = MealFul/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UCL5625TDG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MealFul/Info.plist;
+				INFOPLIST_FILE = MealFul/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
