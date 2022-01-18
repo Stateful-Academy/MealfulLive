@@ -17,7 +17,8 @@ class FoodController {
     }
     
     func deleteFood(_ food: Food) {
-        guard let index = foodList.firstIndex(where: { $0 == food}) else { return }
-        foodList.remove(at: index)
+        guard let i = foodList.firstIndex(of: food) else {return}
+//        guard let index = foodList.firstIndex(where: { $0 == food}) else { return }
+        foodList.remove(at: i)
     }
 }
